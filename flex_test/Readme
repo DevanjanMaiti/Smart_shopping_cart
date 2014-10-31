@@ -1,0 +1,30 @@
+Problem 2:
+
+Light Sensor App:
+
+Sense the light intensity values for every 3 seconds. 
+
+old_intensity = Average of the last 10 intensity values
+curr_intensity = Current light intensity (at the measuring time instant)
+
+If curr_intensity is lesser than old_intensity, switch on red LED.
+If curr_intensity is equal to old_intensity, switch on Green LED. 
+If curr_intensity is greater than old_intensity, switch on amber LED. 
+
+
+* We have used PhotoC component which provides an interface for reading values from the LDR in mda100 board.
+
+* Values from the LDR are buffered(recent 10 values) and averaged and stored as old_intensity.
+
+* Current value of intensity is compared with old_intesity is compared with old_intensity and appropriate Led is switched on.
+
+* All of this is done in readDone() callback event.
+
+
+Memory Usage:
+
+ 4248 bytes in ROM
+   99 bytes in RAM
+ 
+
+
