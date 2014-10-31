@@ -1,0 +1,6 @@
+#MAKEFILE
+SENSORBOARD=mda100
+COMPONENT=Flex_AppC
+-board=mda100
+
+include $(MAKERULES)
